@@ -207,7 +207,7 @@ v_id: ytId[1],
 ajax: '1',
 token: '',
 ftype: 'mp4',
-fquality: 360
+fquality: 720
 })
 .then(res => res.json())
 .then(res => {
