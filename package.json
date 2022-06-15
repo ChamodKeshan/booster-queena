@@ -1,39 +1,31 @@
-{
-  "name": "@ChamodKeshan/booster-queena",
-  "version": "1.0.1",
-  "description": "Power Full WhatsApp User Bot.",
-  "homepage": "https://github.com/ChamodKeshan/booster-queena",
-  "main": "ales/bot.js",
-  "types": "/bot.js",
+  "name": "booster-queena",
+  "version": "8.1.0",
+  "description": "POWERFULL Whatsapp userbot use.",
+  "main": "./ales/bot.js",
+  "scripts": {
+    "start": "supervisor -s bot.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChamodKeshan/booster-queena.git"
+  },
   "keywords": [
     "whatsapp",
-    "js-whatsapp",
-    "whatsapp-api",
-    "whatsapp-web",
-    "whatsapp",
-    "whatsapp-chat",
-    "whatsapp-group",
-    "automation"
+    "bot",
+    "ai",
+    "asena",
+    "WhatsAsena"
   ],
-  "scripts": {
-    "test": "mocha --timeout 240000 -r ts-node/register src/Tests/Tests.*.ts",
-    "prepare": "tsc",
-    "lint": "eslint '*/*.ts' --quiet --fix",
-    "build:all": "tsc && typedoc",
-    "build:docs": "typedoc",
-    "build:tsc": "tsc",
-    "example": "node --inspect -r ts-node/register Example/example.ts",
-    "gen-protobuf": "bash src/Binary/GenerateStatics.sh",
-    "browser-decode": "yarn ts-node src/BrowserMessageDecoding.ts"
+  "author": "Dev / ChamodKeshan",
+  "developer": "Dev / @ChamodKeshan",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/ChamodKeshan/booster-queena/issues"
   },
-  "author": "Chamod Keshan",
-  "license": "MIT",
-  "repository": {
-    "url": "git@github.com:ChamodKeshan/booster-queena.git"
-  },
+  "homepage": "https://github.com/ChamodKeshan/booster-queena#readme",
   "dependencies": {
-    "@chamodkeshan/booster-queena": "^1.0.0",
-    "@chamodkeshan/queen-alexa": "1.0.0",
-    "typescript": "^4.0.0"
+    "@adiwajshing/baileys": "3.4.1",
+    "@chamodkeshan/booster-queena": "1.0.0"
+    
   }
 }
